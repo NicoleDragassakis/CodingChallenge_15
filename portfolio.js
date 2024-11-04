@@ -6,11 +6,11 @@ import { assetsList, getAssetsById } from './asset.js';
 console.log('Assets List:', assetsList);
 console.log('Asset with ID 1:', getAssetsById(1));
 
-export const calculatePortfolioValue(){
+export function calculatePortfolioValue() {
     return assetsList.reduce((total,asset)=> total + asset.price * asset.quantity, 0); //Sums the total value of the portfolio
 }
 
-export const getPortfolioAllocation(){
+export function getPortfolioAllocation() {
     const totalAssetsValue = calculatePortfolioValue(); //gets the total Value
     return assetsList.map(asset => {
         const assetValue = asset.price * asset.quantity;
