@@ -1,4 +1,4 @@
-// TASK ONE
+// asset.js
 
 // Listed Assets
 export const assetsList = [
