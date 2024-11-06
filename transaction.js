@@ -3,8 +3,6 @@
 // Import exports
 import { assetsList, getAssetById } from './asset.js';
 
-console.log('Assets List:', assetsList); // To read the list
-
 class Transaction {
     constructor(assetId, type, quantity) { // Defining the class
         this.assetId = assetId;
